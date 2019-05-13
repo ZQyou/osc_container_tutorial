@@ -1,0 +1,12 @@
+BootStrap: library
+From: library/default/ubuntu:18.04
+
+%post
+    apt update -y
+    apt install -y samtools
+    apt autoclean
+    apt autoremove --purge -y
+    rm -rf /var/lib/apt/lists/*
+
+%runscript
+    exec samtools "$@"
