@@ -69,4 +69,4 @@ Data integrity checked, authentic and signed by:
         Zhi-Qiang You (osc) <my login email>, KeyID 5C8FC5FAF32D582B
 ```
 
-## Use Githut or Gitlab to Maintain Your 'def' files
+## Use Githut or Gitlab to maintain the definition files
