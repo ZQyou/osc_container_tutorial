@@ -1,12 +1,14 @@
 # OSC Workshop: Containers for Research Computing
 This workshop will provide an introduction to using containers for research computing at OSC.
 
+https://www.osc.edu/calendar/events/2019_05_14-osc_workshop_containers_for_research_computing
+
 Topics include:
 * Overview of Containers ([slides](https://osu.app.box.com/file/442091969923))
 * How to Build Your Own Software Environments
 * Reproducible Data and Publication
 
-[Prerequisites for hands-on](./Prerequisties.md)
+[Prerequisites for hands-on exercises](./Prerequisties.md)
 
 Date:
 Tuesday, May 14, 2019 - 1:00pm to 4:00pm
