@@ -2,9 +2,11 @@
 This workshop will provide an introduction to using containers for research computing at OSC.
 
 Topics include:
-* [Overview of Containers](https://osu.app.box.com/file/442091969923)
+* Overview of Containers ([slides](https://osu.app.box.com/file/442091969923))
 * How to Build Your Own Software Environments
 * Reproducible Data and Publication
+
+[Prerequisites for hands-on](./Prerequisties.md)
 
 Date:
 Tuesday, May 14, 2019 - 1:00pm to 4:00pm
