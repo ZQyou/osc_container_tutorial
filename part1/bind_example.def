@@ -1,0 +1,9 @@
+BootStrap: library
+From: ubuntu:18.04
+
+%post
+    mkdir -p /tmp2
+    mkdir -p /tmp3
+
+%runscript
+    echo "Hello Word $$" | tee /tmp2/sug_bind_example

@@ -1,0 +1,18 @@
+BootStrap: library
+From: centos:7
+
+%post
+    yum groupinstall -y "Development Tools"
+    yum install -y wget
+    wget https://www.open-mpi.org/software/ompi/v2.1/downloads/openmpi-2.1.6.tar.bz2
+    tar xf openmpi-2.1.6.tar.bz2
+    cd openmpi-2.1.6
+    ./configure --prefix=/usr/local
+    make
+    make install
+    make clean
+    /usr/local/bin/mpicc examples/ring_c.c -o ring
+    cp ./ring /usr/bin/ring
+
+%runscript
+    exec /usr/bin/ring

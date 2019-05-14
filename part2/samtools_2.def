@@ -9,11 +9,16 @@ From: library/default/ubuntu:18.04
     wget https://github.com/samtools/samtools/releases/download/1.9/samtools-1.9.tar.bz2
     tar xf samtools-1.9.tar.bz2
     cd samtools-1.9
-    ./configure 
+    ./configure --prefix=/opt/samtools/1.9
     make && make install
+    # clean up
     apt autoclean
     apt autoremove --purge -y
     rm -rf /var/lib/apt/lists/*
+
+%environment
+    export PATH=/opt/samtools/1.9/bin:$PATH
+    export MANPATH=/opt/samtools/1.9/share/man:$MANPATH
 
 %runscript
     exec samtools "$@"

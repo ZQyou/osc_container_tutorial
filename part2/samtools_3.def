@@ -4,16 +4,11 @@ From: library/default/ubuntu:18.04
 %post
     apt update -y
     apt install -y wget gcc make libbz2-dev zlib1g-dev \
-    libncurses5-dev libncursesw5-dev liblzma-dev autoconf
+    libncurses5-dev libncursesw5-dev liblzma-dev
     cd $SAMTOOLS_DEV
-    cd htslib
-    autoheader
-    autoconf
-    cd $SAMTOOLS_DEV
-    autoheader
-    autoconf -Wno-syntax 
     ./configure 
     make && make install
+    # clean up
     apt autoclean
     apt autoremove --purge -y
     rm -rf /var/lib/apt/lists/*

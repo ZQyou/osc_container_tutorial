@@ -1,46 +1,51 @@
 # Build a Container
 
 Check the version of Singularity
-```
-$ singularity version
-3.1.0-1
-```
-
 ```shell
-$ apt update -y
-$ apt install -y wget gcc make libbz2-dev zlib1g-dev \
-  libncurses5-dev libncursesw5-dev liblzma-dev
-# clean up
-$ apt autoclean
-$ apt autoremove --purge -y
-$ rm -rf /var/lib/apt/lists/*
+$ singularity version
+3.1.1-1
 ```
 
 Commonly shared file systems:
 `$HOME` (`/root`) , `/tmp` , `/proc` , `/sys` , `/dev`, and `$PWD` are among the system-defined bind paths.
 
-
-## Install software 1
+## Case 1
+Use APT install: [samtools\_1.def](./samtools_1.def)
 ```shell
 $ sudo singularity build samtools_1.7.sif samtools_1.def
 $ ./samtools_1.7.sif --version
-```
+samtools 1.7
+Using htslib 1.7-2
+Copyright (C) 2018 Genome Research Ltd.
 
-## Install software 2
+## use remote build
+$ singularity build --remote samtools_1.7.sif samtools_1.def
+```
+## Case 2
+Install from source code: [samtools\_2.def](./samtools_2.def)
 ```shell
 $ sudo singularity build samtools_1.9.sif samtools_2.def
 $ ./samtools_1.9.sif --version
+samtools 1.9
+Using htslib 1.9
+Copyright (C) 2018 Genome Research Ltd.
+
+## use remote build
+$ singularity build --remote samtools_1.9.sif samtools_2.def
 ```
 
-## Install software 3 
+## Case 3
+Install from source code with
 ```shell
-$ mkdir -p /tmp/github.com
-$ pushd /tmp/github.com
-$ git clone https://github.com/samtools/samtools.git
-$ cd samtools
-$ git clone https://github.com/samtools/htslib.git
+$ mkdir -p /tmp/dev
+$ pushd /tmp/dev
+$ wget https://github.com/samtools/samtools/releases/download/1.9/samtools-1.9.tar.bz2
+$ tar xf samtools-1.9.tar.bz2
 $ popd
-$ export SINGULARITYENV_SAMTOOLS_DEV=/tmp/github.com/samtools
+$ export SINGULARITYENV_SAMTOOLS_DEV=/tmp/dev/samtools-1.9
 $ sudo -E singularity build samtools_dev.sif samtools_3.def
 $ ./samtools_dev.sif --version
+samtools 1.9
+Using htslib 1.9
+Copyright (C) 2018 Genome Research Ltd.
 ```
