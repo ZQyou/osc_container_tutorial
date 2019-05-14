@@ -92,5 +92,5 @@ the Sylabs Cloud
 4. Select __Access Tokens__ from the drop down menu.
 5. Click the __Manage my API tokens__ button from the "Account Management" page.
 6. Click __Create__.
-7. Click __Copy token to Clipboard__ from the âNew API Tokenâ page.
+7. Click __Copy token to Clipboard__ from the __New API Token__ page.
 8. Paste the token string into your `~/.singularity/sylabs-token` file.
