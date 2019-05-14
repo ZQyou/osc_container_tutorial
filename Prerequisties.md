@@ -48,7 +48,7 @@ and install [VirtualBox](https://www.virtualbox.org/wiki/Downloads),
 [Vagrant](https://www.vagrantup.com/downloads.html) and [Vagrant
 Manager](http://vagrantmanager.com/downloads/). 
 
-Create and enter a directory to be used with your Vagrant VM in a terminal
+Create and enter a project directory to be used with your Vagrant VM in a terminal
 ```shell
 $ mkdir singularity && cd singualrity
 ```
