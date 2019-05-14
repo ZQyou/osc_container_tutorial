@@ -73,7 +73,7 @@ $ singularity build --remote samtools_1.9.sif samtools_2.def
 ```
 
 ### Case 3
-Install from source code with
+Install from source code with pre-defined path: [samtools\_3.def](./samtools_3.def)
 ```shell
 $ mkdir -p /tmp/dev
 $ pushd /tmp/dev
