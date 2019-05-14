@@ -59,7 +59,7 @@ $ vagrant init sylabs/singularity-3.1-ubuntu-bionic64 && vagrant up
 Start the VM
 ```shell
 $ cd singularity
-$ vagrantup ssh
+$ vagrant ssh
 Welcome to Ubuntu 18.04.2 LTS (GNU/Linux 4.15.0-45-generic x86_64)
 vagrant@vagrant:~$ singularity version
 3.1.1-1
