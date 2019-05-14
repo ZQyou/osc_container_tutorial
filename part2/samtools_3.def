@@ -1,5 +1,5 @@
 BootStrap: library
-From: library/default/ubuntu:18.04
+From: ubuntu:18.04
 
 %post
     apt update -y
