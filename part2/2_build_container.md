@@ -37,6 +37,13 @@ samtools 1.7
 Using htslib 1.7-2
 Copyright (C) 2018 Genome Research Ltd.
 ```
+### Update the container [samtools\_upd.def](./samtools_upd.def)
+```shell
+$ sudo singularity build --update ubuntu_18.04 samtools_upd.def
+$ udo singularity build samtools_1.7.sif ubuntu_18.04
+$ ./samtoos_1.7.sif --version
+$ singularity ./samtools_1.7.sif exec gcc --version
+```
 
 ## Building containers from the  Singularity definition files
 
