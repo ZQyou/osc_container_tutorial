@@ -1,5 +1,5 @@
 # Share Your Container
-A survey result from Nature, 2016 shows that most scientists can not reproduce
+A survey result from Nature, 2016 shows that most scientists have experienced failure to reproduce
 someone else's result (60-80%) and their own result (40-60%).
 
 ## Upload to OSC
