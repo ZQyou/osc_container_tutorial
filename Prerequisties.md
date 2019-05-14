@@ -50,7 +50,7 @@ Manager](http://vagrantmanager.com/downloads/).
 
 Create and enter a project directory to be used with your Vagrant VM in a terminal
 ```shell
-$ mkdir singularity && cd singualrity
+$ mkdir singularity && cd singularity
 ```
 Pick one Vagrant box and set up the VM
 ```shell
