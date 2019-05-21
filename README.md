@@ -5,8 +5,8 @@ https://www.osc.edu/calendar/events/2019_05_14-osc_workshop_containers_for_resea
 
 Topics include:
 * Overview of Containers ([slides](https://docs.google.com/presentation/d/1aKX2ee99uj_E4K2371MoNgoNXRS1be2lfmzDv5COmP8/edit?usp=sharing))
-* How to Build Your Own Software Environments
-* Reproducible Data and Publication
+* How to Build Your Own Software Environments ([part2](./part2/2_build_container.md))
+* Reproducible Data and Publication ([part3](./part3/3_share_container.md))
 
 [Prerequisites for hands-on exercises](./Prerequisties.md)
 
