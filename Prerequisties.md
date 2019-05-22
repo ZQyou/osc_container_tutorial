@@ -70,6 +70,13 @@ Vagrantfile) to `/vagrant`. Inside the VM,
 vagrant@vagrant:~$ ls /vagrant
 Vagrantfile
 ```
+
+Shutdown a Vagrant box when you don't need it
+```shell
+$ cd singularity
+$ vagrant halt
+```
+
 The [step-by-step
 instruction](https://www.sylabs.io/guides/3.1/user-guide/installation.html#install-on-windows-or-mac)
 can be found in Singularity user guide.
