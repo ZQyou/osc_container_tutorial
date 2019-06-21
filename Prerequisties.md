@@ -101,3 +101,4 @@ the Sylabs Cloud
 6. Click __Create__.
 7. Click __Copy token to Clipboard__ from the __New API Token__ page.
 8. Paste the token string into your `~/.singularity/sylabs-token` file (you might need to create `~/.singularity` directory first) 
+9. Run `singularity remote login SylabsCloud` and paste the token to verify login.
