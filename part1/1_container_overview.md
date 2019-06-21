@@ -34,6 +34,6 @@ $ qsub -I -l nodes=1:ppn=1
 $ cd $TMPDIR 
 $ export SINGULARITY_CACHEDIR=$TMPDIR 
 $ export SINGULARITY_TMPDIR=$TMPDIR 
-$ singularity pull docker://trinityrnaseq/trinityrnaseq 
-$ cp trinityrnaseq_latest.sif /where/to/keep/image/
+$ singularity pull docker://qiime2/core:2019.1
+$ cp qiime2_core_2019.1.sif /where/to/keep/image/
 ```
