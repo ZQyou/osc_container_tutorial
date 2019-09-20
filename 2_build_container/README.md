@@ -19,6 +19,8 @@ $ ls ubuntu_18.04
 ### Make changes inside the base container
 ```shell
 $ sudo singularity shell --writable ubuntu_18.04
+## use --writable-tmpfs if the container is pulled from Docker
+
 Singularity ubuntu_18.04:~> pwd
 /root
 Singularity ubuntu_18.04:~> apt update -y &&  apt install -y samtools
