@@ -46,7 +46,7 @@ For macOS and Windows users, you can use [Vagrant
 boxes](https://app.vagrantup.com/sylabs) mantained by Sylabs. Please download
 and install [VirtualBox](https://www.virtualbox.org/wiki/Downloads),
 [Vagrant](https://www.vagrantup.com/downloads.html) and [Vagrant
-Manager](http://vagrantmanager.com/downloads/). 
+Manager](http://vagrantmanager.com/downloads/) before you proceed. 
 
 Create and enter a project directory to be used with your Vagrant VM in a terminal
 ```shell
