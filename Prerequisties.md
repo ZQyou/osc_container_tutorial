@@ -54,15 +54,15 @@ $ mkdir singularity && cd singularity
 ```
 Pick one Vagrant box and set up the VM
 ```shell
-$ vagrant init sylabs/singularity-3.1-ubuntu-bionic64 && vagrant up
+$ vagrant init sylabs/singularity-3.4-ubuntu-bionic64 && vagrant up
 ```
 Start the VM
 ```shell
 $ cd singularity
 $ vagrant ssh
-Welcome to Ubuntu 18.04.2 LTS (GNU/Linux 4.15.0-45-generic x86_64)
+Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 4.15.0-45-generic x86_64)
 vagrant@vagrant:~$ singularity version
-3.1.1-1
+3.4.0-1
 ```
 By default, Vagrant will share your project directory (the directory with the
 Vagrantfile) to `/vagrant`. Inside the VM,
