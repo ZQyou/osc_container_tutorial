@@ -29,7 +29,7 @@ Clean local cache
 singularity cache clean
 ```
 
-#### Download a large image
+### Download a large image
 Request an interactive session
 ```shell
 sinteractive -n 1
