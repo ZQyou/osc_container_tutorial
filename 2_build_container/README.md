@@ -1,6 +1,6 @@
 # Build a Container
 
-[Prerequisites](./Prerequisties.md)
+[Prerequisites](../Prerequisties.md)
 
 Check Singularity version
 ```shell
